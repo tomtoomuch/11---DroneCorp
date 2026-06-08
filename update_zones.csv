@@ -1,0 +1,11 @@
+idZone,nom,niveau_risque
+Z1,Nord,2
+Z2,Sud,1
+Z3,Est,4
+Z4,Ouest,3
+Z5,Centre,2
+Z6,Nord-Est,5
+Z7,Nord-Ouest,3
+Z8,Sud-Est,4
+Z9,Sud-Ouest,2
+Z10,Haute Plaine,5
