@@ -21,9 +21,16 @@
 
 LOCK TABLES `drone` WRITE;
 /*!40000 ALTER TABLE `drone` DISABLE KEYS */;
-INSERT INTO `drone` VALUES (1,'AigleX','Quadricoptère',25,45,1.2,1),(2,'SkyMax','Quadricoptère',30,50,1.3,1),(3,'Mistral','Quadricoptère',28,47,1.25,1),(4,'Boréal','Quadricoptère',26,44,1.2,1),(5,'Zéphyr','Quadricoptère',29,48,1.3,1),(6,'Sirocco','Quadricoptère',27,46,1.2,1),(7,'Tramontane','Quadricoptère',30,50,1.35,1),(8,'Libeccio','Quadricoptère',25,45,1.2,1),(9,'Falcon','Hexacoptère',40,60,2.1,2),(10,'Titan','Hexacoptère',38,58,2,2),(11,'Condor','Hexacoptère',42,62,2.15,2),(12,'Raptor','Hexacoptère',39,59,2.05,2),(13,'Vautour','Hexacoptère',41,61,2.1,2),(14,'Pygargue','Hexacoptère',40,60,2.2,2),(15,'Balbuzard','Hexacoptère',38,58,2,2),(16,'Circaète','Hexacoptère',43,63,2.3,2),(17,'PhoenixV','VTOL',55,80,3.5,3),(18,'AresVTOL','VTOL',52,78,3.4,3),(19,'HermèsV','VTOL',57,82,3.6,3),(20,'ZeusV','VTOL',50,75,3.3,3),(21,'AtlasV','VTOL',54,79,3.5,3),(22,'OdysseyV','VTOL',56,81,3.55,3),(24,'MiniDrone',NULL,5,15,0.05,4),(25,'Autan','Quadricoptère',27,46,1.22,1),(26,'Harmattan','Quadricoptère',28,47,1.28,1),(27,'Foehn','Quadricoptère',26,45,1.2,1),(28,'Chinook','Quadricoptère',29,49,1.3,1),(29,'Ponant','Quadricoptère',30,50,1.35,1),(30,'Levant','Quadricoptère',25,44,1.2,1),(31,'Nordet','Quadricoptère',28,48,1.25,1),(32,'Galerne','Quadricoptère',27,46,1.2,1),(33,'Vent Solaire','Quadricoptère',29,47,1.3,1),(34,'Brise','Quadricoptère',26,45,1.22,1),(35,'Albatros','Hexacoptère',41,61,2.12,2),(36,'Faucon','Hexacoptère',39,59,2.02,2),(37,'Aigle','Hexacoptère',42,62,2.18,2),(38,'Milan','Hexacoptère',40,60,2.08,2),(39,'Épervier','Hexacoptère',38,58,2,2),(40,'Busard','Hexacoptère',43,63,2.25,),(41,'Harfang','Hexacoptère','HX-200',41,61,2.1),(42,'Autour','Hexacoptère','HX-200',39,59,2.05),(43,'Crécerelle','Hexacoptère','HX-200',40,60,2.1),(44,'Bondrée','Hexacoptère','HX-200',42,62,2.2),(45,'TitanV','VTOL','VTOL-X',53,78,3.45),(46,'CronusV','VTOL','VTOL-X',55,80,3.5),(47,'HeliosV','VTOL','VTOL-X',51,76,3.35),(48,'ApolloV','VTOL','VTOL-X',57,82,3.6),(49,'ArésV2','VTOL','VTOL-X',54,79,3.5),(50,'NikeV','VTOL','VTOL-X',52,77,3.4),(51,'HéphaïstosV','VTOL','VTOL-X',56,81,3.55),(52,'DéméterV','VTOL','VTOL-X',50,75,3.3),(53,'NullDrone',NULL,'AX-100',25,45,1.2),(54,'PoidsFou','Quadricoptère','AX-100',25,45,NULL),(55,'VitesseFolle','Hexacoptère','HX-200',40,NULL,2.1);
+INSERT INTO `drone` VALUES (1,'AigleX','Quadricoptère',25,45,1.2,1),(2,'SkyMax','Quadricoptère',30,50,1.3,1),(3,'Mistral','Quadricoptère',28,47,1.25,1),(4,'Boréal','Quadricoptère',26,44,1.2,1),(5,'Zéphyr','Quadricoptère',29,48,1.3,1),(6,'Sirocco','Quadricoptère',27,46,1.2,1),(7,'Tramontane','Quadricoptère',30,50,1.35,1),(8,'Libeccio','Quadricoptère',25,45,1.2,1),(9,'Falcon','Hexacoptère',40,60,2.1,2),(10,'Titan','Hexacoptère',38,58,2,2),(11,'Condor','Hexacoptère',42,62,2.15,2),(12,'Raptor','Hexacoptère',39,59,2.05,2),(13,'Vautour','Hexacoptère',41,61,2.1,2),(14,'Pygargue','Hexacoptère',40,60,2.2,2),(15,'Balbuzard','Hexacoptère',38,58,2,2),(16,'Circaète','Hexacoptère',43,63,2.3,2),(17,'PhoenixV','VTOL',55,80,3.5,3),(18,'AresVTOL','VTOL',52,78,3.4,3),(19,'HermèsV','VTOL',57,82,3.6,3),(20,'ZeusV','VTOL',50,75,3.3,3),(21,'AtlasV','VTOL',54,79,3.5,3),(22,'OdysseyV','VTOL',56,81,3.55,3),(24,'MiniDrone',NULL,5,15,0.05,4),(25,'Autan','Quadricoptère',27,46,1.22,1),(26,'Harmattan','Quadricoptère',28,47,1.28,1),(27,'Foehn','Quadricoptère',26,45,1.2,1),(28,'Chinook','Quadricoptère',29,49,1.3,1),(29,'Ponant','Quadricoptère',30,50,1.35,1),(30,'Levant','Quadricoptère',25,44,1.2,1),(31,'Nordet','Quadricoptère',28,48,1.25,1),(32,'Galerne','Quadricoptère',27,46,1.2,1),(33,'Vent Solaire','Quadricoptère',29,47,1.3,1),(34,'Brise','Quadricoptère',26,45,1.22,1),(35,'Albatros','Hexacoptère',41,61,2.12,2),(36,'Faucon','Hexacoptère',39,59,2.02,2),(37,'Aigle','Hexacoptère',42,62,2.18,2),(38,'Milan','Hexacoptère',40,60,2.08,2),(39,'Épervier','Hexacoptère',38,58,2,2),(40,'Busard','Hexacoptère',43,63,2.25,),(41,'Harfang','Hexacoptère',41,61,2.1,2),(42,'Autour','Hexacoptère',39,59,2.05,2),(43,'Crécerelle','Hexacoptère',40,60,2.1,2),(44,'Bondrée','Hexacoptère',42,62,2.2,2),(45,'TitanV','VTOL',53,78,3.45,3),(46,'CronusV','VTOL',55,80,3.5,3),(47,'HeliosV','VTOL',51,76,3.35,3),(48,'ApolloV','VTOL',57,82,3.6,3),(49,'ArésV2','VTOL',54,79,3.5,3),(50,'NikeV','VTOL',52,77,3.4,3),(51,'HéphaïstosV','VTOL',56,81,3.55,3),(52,'DéméterV','VTOL',50,75,3.3,3),(53,'NullDrone',NULL,25,45,1.2,1),(54,'PoidsFou','Quadricoptère',25,45,NULL,1),(55,'VitesseFolle','Hexacoptère',40,NULL,2.1,2);
 /*!40000 ALTER TABLE `drone` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Creating data for table 'modele'
+--
+
+LOCK TABLES 'modele' WRITE;
+INSERT INTO 'modele' VALUES (1,'AX-100'), (2, 'HX-200'), (3, 'VTOL-X'), (4, 'MN-50');
 
 --
 -- Dumping data for table `maintenance`
@@ -74,6 +81,23 @@ LOCK TABLES `zone` WRITE;
 INSERT INTO `zone` VALUES ('Z1','Nord','Z2'),('Z10','Haute Plaine',NULL),('Z2','Sud','Z1'),('Z3','Est',NULL),('Z4','Ouest','Z3'),('Z5','Centre','Z1'),('Z6','Nord-Est','Z3'),('Z7','Nord-Ouest','Z4'),('Z8','Sud-Est','Z3'),('Z9','Sud-Ouest','Z4');
 /*!40000 ALTER TABLE `zone` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Dumping data for table `est_entouree_de`
+--
+
+
+
+--
+-- Dumping data for table `peut_avoir`
+--
+
+
+--
+-- Dumping data for table `approvisionne`
+--
+
+
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
